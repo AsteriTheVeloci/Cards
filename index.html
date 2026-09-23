@@ -1,187 +1,101 @@
+<!-- Reference only — shows where the tags sit inside a <head>. -->
+<!-- Copy just what you need into your homepage's real HTML. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>New Berks Dawn</title>
+  <meta charset="utf-8" />
+  <title>General question</title>
 
-<!--
-  DISCORD COMPONENT EMBED
-  ------------------------------------------------------------
-  This is the part Discord actually reads. When someone pastes
-  this page's URL into Discord, Discord's crawler fetches this
-  page and looks for this <script> tag in the <head>. If it's
-  there, Discord renders the JSON below as the link preview
-  instead of the normal Open Graph card.
+  <meta property="og:title" content="General question" />
+  <meta property="og:description" content="A short summary shown as a fallback." />
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1398023991662215360/1550527745992425613/image.png?ex=6ab497be&amp;is=6ab3463e&amp;hm=e8e3286a31162f80f51cd913b9f4628845710f59e53c7904ce0a234ca308cbb4&amp;format=webp&amp;quality=lossless&amp;" />
+  <meta property="og:url" content="https://media.discordapp.net/attachments/1398023991662215360/1550527745992425613/image.png?ex=6ab497be&amp;is=6ab3463e&amp;hm=e8e3286a31162f80f51cd913b9f4628845710f59e53c7904ce0a234ca308cbb4&amp;format=webp&amp;quality=lossless&amp;" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  Rules to remember:
-  - Raw response bytes must stay under 3,000 bytes for this
-    JSON object (this one is ~2,231 bytes, so there's room).
-  - If a <link rel="discord:component-embed"> tag is ALSO on
-    this page, the inline <script> below wins and the <link>
-    is ignored - so only use one method per page.
-  - Discord's crawler does not run JavaScript. This has to be
-    present in the raw HTML response, not injected after load.
-  - This is display-only: buttons can link out, but nothing
-    sends an interaction back, so no bot or app is required.
--->
-<script id="discord:component-embed" type="application/json">
-{
-  "component": {
-    "type": 17,
-    "components": [
-      {
-        "type": 12,
-        "items": [
-          {
-            "media": {
-              "url": "https://media.discordapp.net/attachments/568514412139249667/1536411828714733658/image.png?ex=6ab3ff05&is=6ab2ad85&hm=4e62dbdc63103bd11c9cb9a128c7c31bb24b84fb507116c4fd7e83c1156a6e1b&=&format=webp&quality=lossless&width=2048&height=263"
-            },
-            "description": "The main character entering the dungeon"
-          }
-        ]
-      },
-      {
-        "type": 9,
-        "components": [
-          {
-            "type": 10,
-            "content": "## The Mod is out!"
-          }
-        ],
-        "accessory": {
-          "type": 11,
-          "media": {
-            "url": "https://media.discordapp.net/attachments/1398023991662215360/1550527745992425613/image.png?ex=6ab497be&is=6ab3463e&hm=e8e3286a31162f80f51cd913b9f4628845710f59e53c7904ce0a234ca308cbb4&=&format=webp&quality=lossless"
-          }
-        }
-      },
-      {
-        "type": 9,
-        "components": [
-          {
-            "type": 10,
-            "content": "***Or* the parent mod is, as Book of Dragons and New Berks Dawn are one thing.** Our custom made code is retaining NBD's model style with its varients made into genetics. \n\nYes you heard right, *we have genetics*\n"
-          }
-        ],
-        "accessory": {
-          "type": 2,
-          "style": 5,
-          "url": "https://discord.gg/new-berks-dawn-official",
-          "label": "Discord",
-          "emoji": {
-            "name": "📌"
-          }
-        }
-      },
-      {
-        "type": 1,
-        "components": [
-          {
-            "type": 2,
-            "style": 5,
-            "url": "https://canary.discord.com/channels/1154425761650974821/1521032421397500036",
-            "label": "Dev-logs every Friday",
-            "emoji": {
-              "name": "📢"
+  <script id="discord:component-embed" type="application/json">
+  {
+    "component": {
+      "type": 17,
+      "components": [
+        {
+          "type": 12,
+          "items": [
+            {
+              "media": {
+                "url": "https://media.discordapp.net/attachments/568514412139249667/1536411828714733658/image.png?ex=6ab3ff05&is=6ab2ad85&hm=4e62dbdc63103bd11c9cb9a128c7c31bb24b84fb507116c4fd7e83c1156a6e1b&=&format=webp&quality=lossless&width=2048&height=263"
+              },
+              "description": "The main character entering the dungeon"
             }
-          },
-          {
+          ]
+        },
+        {
+          "type": 9,
+          "components": [
+            {
+              "type": 10,
+              "content": "## The Mod is out!\n***Or* the parent mod is, as Book of Dragons and New Berks Dawn are one thing.** Our custom made code is retaining NBD's model style with its varients made into genetics. \n"
+            }
+          ],
+          "accessory": {
+            "type": 11,
+            "media": {
+              "url": "https://media.discordapp.net/attachments/1398023991662215360/1550527745992425613/image.png?ex=6ab497be&is=6ab3463e&hm=e8e3286a31162f80f51cd913b9f4628845710f59e53c7904ce0a234ca308cbb4&format=webp&quality=lossless&"
+            }
+          }
+        },
+        {
+          "type": 9,
+          "components": [
+            {
+              "type": 10,
+              "content": "\nYes you heard right, *we have genetics*\n"
+            }
+          ],
+          "accessory": {
             "type": 2,
             "style": 5,
-            "url": "https://canary.discord.com/channels/1154425761650974821/1154425762066215030/1520653460083703898",
-            "label": "\"What happened?"
+            "url": "https://discord.gg/new-berks-dawn-official",
+            "label": "Discord",
+            "emoji": {
+              "name": "📌"
+            }
           }
-        ]
-      },
-      {
-        "type": 14
-      },
-      {
-        "type": 10,
-        "content": "### Available on [Modrinth](<https://modrinth.com/mod/book-of-dragons>) & [Curseforge](https://www.curseforge.com/minecraft/mc-mods/book-of-dragons)\n-# Use Azurelib 3.1.4; fixed in in update `1.4`."
-      }
-    ]
+        },
+        {
+          "type": 1,
+          "components": [
+            {
+              "type": 2,
+              "style": 5,
+              "url": "https://canary.discord.com/channels/1154425761650974821/1521032421397500036",
+              "label": "Dev-logs every Friday",
+              "emoji": {
+                "name": "📢"
+              }
+            },
+            {
+              "type": 2,
+              "style": 5,
+              "url": "https://canary.discord.com/channels/1154425761650974821/1154425762066215030/1520653460083703898",
+              "label": "\"What happened?"
+            }
+          ]
+        },
+        {
+          "type": 14
+        },
+        {
+          "type": 10,
+          "content": "### Available on [Modrinth](<https://modrinth.com/mod/book-of-dragons>) & [Curseforge](https://www.curseforge.com/minecraft/mc-mods/book-of-dragons)\n-# Use Azurelib 3.1.4; fixed in in update `1.4`."
+        }
+      ]
+    }
   }
-}
-</script>
-
-<!--
-  Ordinary Open Graph tags as a fallback, for anything that
-  doesn't understand discord:component-embed (other chat apps,
-  search engines, etc). Not required for Discord itself, but
-  cheap to include.
--->
-<meta property="og:title" content="New Berks Dawn">
-<meta property="og:description" content="Book of Dragons / New Berks Dawn - custom genetics, out now on Modrinth & CurseForge.">
-<meta property="og:image" content="https://media.discordapp.net/attachments/1398023991662215360/1550527745992425613/image.png?ex=6ab497be&is=6ab3463e&hm=e8e3286a31162f80f51cd913b9f4628845710f59e53c7904ce0a234ca308cbb4&=&format=webp&quality=lossless">
-
-<style>
-  :root {
-    color-scheme: dark;
-    --bg: #12100e;
-    --panel: #1b1815;
-    --text: #eae4da;
-    --muted: #9a9188;
-    --accent: #c96a3f;
-    --rule: #322c26;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: var(--bg);
-    color: var(--text);
-    font-family: ui-serif, Georgia, "Iowan Old Style", serif;
-    line-height: 1.55;
-  }
-  main {
-    max-width: 38rem;
-    width: 100%;
-  }
-  h1 {
-    font-size: 1.9rem;
-    margin: 0 0 0.4rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-  }
-  p.lede {
-    color: var(--muted);
-    margin: 0 0 1.6rem;
-    font-size: 1.05rem;
-  }
-  .card {
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    border-radius: 6px;
-    padding: 1.25rem 1.4rem;
-    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-    font-size: 0.82rem;
-    color: var(--muted);
-  }
-  .card b { color: var(--accent); font-weight: 600; }
-  a { color: var(--accent); }
-  footer {
-    margin-top: 1.8rem;
-    font-size: 0.85rem;
-    color: var(--muted);
-  }
-</style>
+  </script>
 </head>
 <body>
-  <main>
-    <h1>New Berks Dawn</h1>
-    <p class="lede">This page exists mainly for Discord's crawler. Paste this page's URL into a Discord message and the component embed above renders as the link preview.</p>
-    <div class="card">
-      <div><b>Tag:</b> discord:component-embed (inline script)</div>
-      <div><b>Payload size:</b> ~2,231 / 3,000 bytes</div>
-      <div><b>Delivery:</b> single file, no external JSON</div>
-    </div>
-    <footer>Available on <a href="https://modrinth.com/mod/book-of-dragons">Modrinth</a> &amp; <a href="https://www.curseforge.com/minecraft/mc-mods/book-of-dragons">CurseForge</a>.</footer>
-  </main>
+  <!-- ...the rest of your existing homepage, unchanged... -->
 </body>
 </html>
